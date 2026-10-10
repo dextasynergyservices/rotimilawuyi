@@ -1,0 +1,100 @@
+/* Typography */
+html, body {
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Colors */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #007bff;
+  --muted: #6c757d;
+}
+
+/* Navbar tweaks */
+.navbar .nav-link {
+  color: var(--black);
+  transition: color .2s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--blue);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  filter: brightness(0.95);
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Hero */
+.bg-light-gradient {
+  background: linear-gradient(180deg, #f8f9fa 0%, rgba(248,249,250,0) 100%);
+}
+.hero-photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Sections */
+.section-title {
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+.info-tile {
+  background: #fff;
+}
+
+/* Cards and lists */
+.card-hover {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+.list-group-item a {
+  text-decoration: none;
+}
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.hover-blue:hover {
+  color: var(--blue) !important;
+}
+
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--delay, 0s);
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scrolling behavior as fallback */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+.text-secondary { color: var(--muted) !important; }
+
+
